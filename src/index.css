@@ -1,0 +1,281 @@
+@font-face {
+  font-family: "Circular Std";
+  src: url("//db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.eot");
+  src: url("//db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.svg#Circular Std Book")
+      format("svg");
+}
+
+* {
+  font-family: "Circular Std";
+  box-sizing: border-box;
+}
+html {
+  font-size: 18px;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.price {
+  width: 45%;
+}
+.price h1 {
+  position: relative;
+  font-size: 3.9rem;
+  margin-bottom: 10px;
+  line-height: 80px;
+}
+.price h1 span {
+  font-size: 1.33rem;
+  position: absolute;
+  top: -12px;
+  left: 280px;
+  color: #bdbebf;
+}
+.price p {
+  font-size: 1rem;
+  color: #67bf6b;
+  margin-bottom: 55px;
+  line-height: 23px;
+}
+.navbar {
+  width: 60%;
+}
+.navbar a {
+  text-decoration: none;
+  color: #6f7177;
+  float: left;
+  font-size: 0.7rem;
+  font-weight: 100;
+  line-height: 23px;
+  margin-right: 2rem;
+}
+
+.active {
+  border-bottom: 2px solid #4b40ee;
+  color: #1a243a !important;
+}
+
+.seperator {
+  border: 1px solid #eff1f3;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.actions-time {
+  font-size: 1rem;
+}
+
+.actions-time nav div a {
+  float: left;
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+}
+.actions-time nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 60px;
+}
+.actions-time nav ul li {
+  float: right;
+  list-style: none;
+}
+.actions-time nav ul li button {
+  font-size: 1rem;
+  border: none;
+  background-color: white;
+  color: #6f7177;
+}
+.actions-time nav ul li button:hover {
+  padding: 4px 10px;
+  border: 1px solid #4b40ee;
+  border-color: #4b40ee;
+  border-radius: 5px;
+  background-color: #4b40ee;
+  color: white;
+}
+.actions-time nav ul li .activeTime {
+  padding: 4px 10px;
+  border: 1px solid #4b40ee;
+  border-color: #4b40ee;
+  border-radius: 5px;
+  background-color: #4b40ee;
+  color: white;
+}
+.menu-nav {
+  display: flex;
+  align-items: center;
+}
+
+.actions {
+  flex: 1;
+}
+
+.actions a p {
+  padding-left: 10px;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.actions a {
+  text-decoration: none;
+  flex: 1;
+}
+.actions a p {
+  color: #6f7177;
+}
+.time {
+  flex: 1.5;
+}
+.graph-container {
+  position: relative;
+}
+.svg-grid {
+  position: absolute;
+}
+.svg-volume {
+  position: absolute;
+  left: -1px;
+  top: 303px;
+}
+.svg-fill {
+  position: absolute;
+  left: 5px;
+}
+.svg-line {
+  position: absolute;
+  left: 5px;
+}
+.svg-Hline {
+  position: absolute;
+  top: 60px;
+  left: -1px;
+}
+.svg-Vline {
+  position: absolute;
+  left: 335px;
+}
+.point {
+  position: absolute;
+  left: 750px;
+  top: 20px;
+  color: white;
+  background-color: #1a243a;
+  border: 1px solid #1a243a;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.atMax {
+  position: absolute;
+  left: 730px;
+  top: 120px;
+  color: white;
+  background-color: #4b40ee;
+  border: 1px solid #4b40ee;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+@media (min-width: 900px) and (max-width: 995px) {
+  .navbar a {
+    font-size: 0.6rem;
+  }
+  .price h1 {
+    font-size: 3rem;
+  }
+  .price h1 span {
+    font-size: 1.12rem;
+    left: 210px;
+    top: -10px;
+  }
+  .price p {
+    font-size: 0.9rem;
+  }
+  .actions a p {
+    font-size: 0.9rem;
+  }
+  .actions-time nav ul li button {
+    font-size: 0.9rem;
+    padding: 3px 9px;
+  }
+  .actions-time nav ul li .activeTime {
+    padding: 2px 8px;
+  }
+}
+@media (max-width: 899px) {
+  .price h1 {
+    font-size: 3rem;
+  }
+  .price h1 span {
+    font-size: 1.12rem;
+    left: 210px;
+    top: -10px;
+  }
+  .navbar {
+    width: 100%;
+  }
+  .navbar a {
+    margin-right: 0.8rem;
+  }
+  .navbar a h2 {
+    font-size: 0.73rem;
+  }
+  .actions-time nav ul li button {
+    font-size: 0.9rem;
+    padding: 3px 9px;
+  }
+  .actions-time nav ul li .activeTime {
+    padding: 1.6px 6px;
+  }
+  .actions a p {
+    font-size: 0.73rem;
+  }
+}
+/* for desktop */
+.whatsapp_float {
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+        font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+        z-index:100;
+}
+
+.whatsapp-icon {
+	margin-top:16px;
+}
+/* for mobile */
+@media screen and (max-width: 767px){
+     .whatsapp-icon {
+	 margin-top:10px;
+     }
+    .whatsapp_float {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 10px;
+        font-size: 22px;
+    }
+}
